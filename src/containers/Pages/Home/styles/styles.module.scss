@@ -1,0 +1,21 @@
+@import "../../../../styles/partials/mixin";
+@import "../../../../styles/partials/colors";
+@import "../../../../styles/partials/mediaQueries";
+
+.container {
+    margin-inline: auto;
+    padding-inline: 1rem;
+
+    /* Minimum Tablet Query */
+    @media screen and (min-width: 950px) {
+        padding-block: 1em;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1em;
+    }
+
+    @include responsive(desktop-screens) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

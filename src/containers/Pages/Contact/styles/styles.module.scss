@@ -1,0 +1,118 @@
+@import "../../../../styles/partials/mixin";
+@import "../../../../styles/partials/colors";
+@import "../../../../styles/partials/mediaQueries";
+
+.contact_container {
+
+    h2,
+    ul {
+        margin: 0 !important;
+        padding: 0;
+    }
+
+    &__content {
+        @include displayGrid($gc: 1fr);
+        margin-block: 1rem;
+        width: 90%;
+        margin-inline: auto;
+
+        @include responsive(desktop-screens) {
+            @include displayGrid($gc: repeat(2, 1fr));
+            column-gap: 2rem;
+        }
+
+        // >div:nth-child(1) {//     @include displayFlex(space-between, flex-start);
+        //     flex-direction: column;
+        // }
+
+        &___contact {
+            @include displayFlex(flex-start, space-between);
+            flex-basis: 1;
+            margin-block: 2rem;
+            gap: 1rem;
+            font-size: .7rem;
+
+            @include responsive(desktop-screens) {
+                font-size: unset;
+            }
+
+            &:first-child {
+                margin-block-start: 0;
+            }
+
+            @include responsive(desktop-screens) {}
+
+            li {
+                display: flex;
+                list-style-type: none;
+
+                @include responsive(desktop-screens) {
+
+                    width: 70%;
+                }
+
+                span {
+                    display: inline-block;
+                    padding-inline-end: .5rem;
+                    font-weight: bold;
+                }
+            }
+
+            &____icon {
+                font-size: 1.2rem;
+
+                @include responsive(desktop-screens) {
+                    font-size: 2rem;
+
+                }
+            }
+        }
+
+        &___message {
+
+            @include responsive(mobile-screens) {
+                margin-block-start: 1rem;
+                padding-block-start: 2rem;
+                border-top: 3px solid $primaryOrange;
+            }
+
+            form {
+
+                label {
+                    display: block;
+                    margin-block-start: .5rem;
+                    color: $primaryBlack;
+                    font-weight: 500;
+                    font-size: .85rem;
+
+                    span {
+                        color: $primaryRed;
+                        font-size: .5rem;
+                    }
+                }
+
+                input,
+                textarea {
+                    @include paddingMargin(.5rem 1rem, 0);
+                    width: 100%;
+                    border: 1px solid $primaryGray;
+                    outline: none;
+                    border-radius: .3rem;
+                    font-size: 1.02rem;
+                    box-sizing: border-box;
+                }
+
+                button {
+                    display: block;
+                    margin-inline-start: auto;
+                    border: none;
+                    border-radius: .5rem;
+                    padding: .5rem 1rem;
+                    font-size: large;
+                    background-color: $primaryRed;
+                    color: $primaryWhite;
+                }
+            }
+        }
+    }
+}

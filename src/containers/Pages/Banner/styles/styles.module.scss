@@ -1,0 +1,17 @@
+@import "../../../../styles/partials/mixin";
+@import "../../../../styles/partials/colors";
+@import "../../../../styles/partials/mediaQueries";
+
+.banner_container {
+    @include heightWidth($height: 40vh);
+    @include displayFlex();
+    object-fit: cover;
+    background-size: cover;
+
+    &__heading {
+        font-size: 4rem;
+        font-family: cursive;
+        font-weight: bolder;
+        color: $primaryWhite;
+    }
+}

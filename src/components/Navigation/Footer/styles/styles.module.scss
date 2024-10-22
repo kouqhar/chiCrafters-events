@@ -1,0 +1,34 @@
+@import "../../../../styles/partials/mediaQueries";
+@import "../../../../styles/partials/mixin";
+@import "../../../../styles/partials/colors";
+
+.Footer {
+    background-color: $primaryColor;
+    padding: 1rem;
+    text-align: center;
+    height: auto;
+
+    &_contact {
+        margin-block: 1em;
+
+        ul {
+            @include paddingMargin(0, auto);
+            display: grid;
+            gap: .5rem;
+            grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+
+            @include responsive(desktop-screens) {
+                width: 30%;
+            }
+
+            a {
+                color: $primaryOrange;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    @include responsive(mobile-screens) {
+        font-size: .7rem;
+    }
+}

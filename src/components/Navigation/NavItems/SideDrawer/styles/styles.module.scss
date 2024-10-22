@@ -1,0 +1,29 @@
+@import "../../../../../styles/partials/mixin";
+@import "../../../../../styles/partials/colors";
+
+.Header_Mobile {
+    @include displayFlex(space-between, center);
+    @include paddingMargin($padding: 0 1em);
+    width: 100%;
+
+    ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 0;
+
+        li {
+            margin-block: 1em;
+            font-weight: bolder;
+            font-size: 1.2rem;
+            width: 100%;
+            text-align: center;
+
+            a {
+                color: $primaryOrange;
+            }
+        }
+    }
+}

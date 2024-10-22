@@ -1,0 +1,18 @@
+.banner_container {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+}
+.banner_container__heading {
+  font-size: 4rem;
+  font-family: cursive;
+  font-weight: bolder;
+  color: #ffffff;
+}/*# sourceMappingURL=styles.module.css.map */

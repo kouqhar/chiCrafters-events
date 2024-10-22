@@ -1,0 +1,19 @@
+.container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+  /* Minimum Tablet Query */
+}
+@media screen and (min-width: 950px) {
+  .container {
+    padding-block: 1em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1em;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=styles.module.css.map */

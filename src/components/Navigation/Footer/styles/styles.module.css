@@ -1,0 +1,30 @@
+.Footer {
+  background-color: #04181A;
+  padding: 1rem;
+  text-align: center;
+  height: auto;
+}
+.Footer_contact {
+  margin-block: 1em;
+}
+.Footer_contact ul {
+  padding: 0;
+  margin: auto;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+}
+@media (min-width: 1024px) {
+  .Footer_contact ul {
+    width: 30%;
+  }
+}
+.Footer_contact ul a {
+  color: #ffa600;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  .Footer {
+    font-size: 0.7rem;
+  }
+}/*# sourceMappingURL=styles.module.css.map */
