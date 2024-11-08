@@ -30,7 +30,7 @@ const Nav = () => {
       <div className="header">
         <img
           src={officialLogo}
-          alt="Vida Event Logo"
+          alt="chiCrafters Event Logo"
           style={{ height: "5vh", width: "5vh" }}
         />
         <h1 className="hide_mobile">{ApplicationName}</h1>

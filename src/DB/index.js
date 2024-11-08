@@ -6,9 +6,26 @@ import {
   FaPhone,
   FaRegMessage,
 } from "react-icons/fa6";
+import { Images } from "./Images";
+const lorem = `
+        Illum doloremque magnam quaerat odio, consequatur eos non voluptatum quidem? Hic, quisquam consequuntur temporibus maiores quidem quas blanditiis ea excepturi incidunt, facere, non itaque. Dolorum quae expedita in minus repudiandae.
+        Veritatis, hic quis aliquid consequuntur delectus facilis quos perferendis, dolores iusto repudiandae error aut deserunt laborum illo commodi autem! Dicta aut modi fugiat nostrum corrupti voluptatum debitis accusamus iste assumenda.
+        Qui vitae ad itaque obcaecati sunt, nisi similique optio odio aliquid nostrum alias delectus pariatur est laborum dignissimos. Velit excepturi reprehenderit error veritatis molestiae saepe dolore blanditiis ex temporibus aut?
+        Deleniti dolor ratione, pariatur fuga nulla neque aperiam ducimus, iusto aspernatur perspiciatis beatae sequi, ad architecto. Ipsam eos, similique provident laboriosam suscipit rem recusandae eveniet, ratione dolores fuga libero facilis?
+        Similique beatae molestias a accusantium necessitatibus maxime fugiat nemo, eaque alias id consequatur in velit quae quaerat culpa dolore consectetur est suscipit doloremque deserunt quas. Aliquam suscipit laboriosam iure nisi.
+        Illo architecto omnis rerum harum dolorem, asperiores officiis non recusandae laudantium sit nisi, dolorum amet earum ut deleniti nobis temporibus adipisci sapiente eaque iure consequatur cum? Nemo optio aperiam vitae.
+        Labore enim dicta illum nam aut perferendis dolore omnis voluptatibus nobis delectus ducimus adipisci aliquid, voluptate fuga ea quisquam voluptates ipsum, culpa quod repellendus minima optio voluptatem unde beatae. Eos.
+        Itaque labore voluptas cumque facere iste nisi tenetur illum unde molestiae quas aperiam magnam nihil recusandae, amet vitae odio repellat quisquam exercitationem, asperiores velit rem nostrum quam inventore esse? Reiciendis?
+        Eligendi maxime alias quaerat, minus, debitis distinctio nulla molestiae, error eos velit laborum maiores impedit. Expedita doloribus id commodi, aspernatur laudantium obcaecati unde, fugiat pariatur perferendis mollitia quia suscipit voluptatibus.
+        Odio, quas perspiciatis. Perspiciatis delectus nemo, fugiat quo quia eum? Nesciunt magnam similique aperiam illo officiis nemo iure quisquam hic perferendis, nostrum quasi rerum cupiditate possimus in est odio ex.
+        Veritatis nemo blanditiis labore recusandae, iusto est dolorem, numquam, illo perspiciatis sint asperiores fugit enim necessitatibus facere maxime ullam beatae eaque sit totam quaerat dolores! Pariatur, veniam. Hic, ex voluptas.!
+`;
 
 // Utils
 import { Existence, START_YEAR } from "../utils";
+
+// Variables
+const { concert3, concert1, concert2, concert4 } = Images;
 
 const Navigation = [
   {
@@ -90,7 +107,7 @@ const ContactForm = [
 ];
 
 const About = {
-  ApplicationName: "Vida Event",
+  ApplicationName: "chiCrafters Event",
   HomeDescription:
     "GlobalGateway is an affordable all-in-one ticketing and marketing platform that offers great value for your money. With GlobalGateway, you can easily sell event tickets online and reach your target audience for a cheap price.",
   dates: { Existence, START_YEAR },
@@ -128,4 +145,95 @@ const About = {
   ],
 };
 
-export { Navigation, Contacts, ContactForm, About };
+const AboutPage = [
+  {
+    title: "who we are",
+    description: lorem,
+  },
+  {
+    title: "what we do",
+    description: lorem,
+    image: concert1,
+  },
+  {
+    title: "our clients",
+    description: lorem,
+    image: concert3,
+  },
+];
+
+const ServicesPage = [
+  {
+    title: "high profile events",
+    description: lorem,
+  },
+  {
+    title: "corporate events",
+    description: lorem,
+    image: concert1,
+  },
+  {
+    title: "weddings",
+    description: lorem,
+    image: concert3,
+  },
+  {
+    title: "vip events",
+    description: lorem,
+    image: concert2,
+  },
+  {
+    title: "off the chart events",
+    description: lorem,
+    image: concert4,
+  },
+];
+
+const PortfolioPage = [
+  {
+    image: concert1,
+    type: "wedding",
+  },
+  {
+    image: concert3,
+    type: "corporate",
+  },
+  {
+    image: concert2,
+    type: "wedding",
+  },
+  {
+    image: concert4,
+    type: "birthday",
+  },
+  {
+    image: concert2,
+    type: "corporate",
+  },
+  {
+    image: concert1,
+    type: "wedding",
+  },
+  {
+    image: concert4,
+    type: "birthday",
+  },
+  {
+    image: concert3,
+    type: "corporate",
+  },
+  {
+    image: concert2,
+    type: "birthday",
+  },
+];
+
+export {
+  Navigation,
+  Contacts,
+  ContactForm,
+  About,
+  AboutPage,
+  ServicesPage,
+  PortfolioPage,
+};

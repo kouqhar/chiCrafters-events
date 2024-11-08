@@ -1,0 +1,34 @@
+.information {
+  margin-block: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+  flex-direction: column;
+}
+.information_image {
+  height: 400px;
+  width: 100%;
+}
+.information_image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.information_content {
+  width: 80%;
+  margin-inline: auto;
+}
+@media (min-width: 1024px) {
+  .information_content {
+    width: 70%;
+  }
+}
+.information_content h1 {
+  text-align: center;
+}
+.information_content p {
+  text-align: justify;
+}/*# sourceMappingURL=styles.module.css.map */

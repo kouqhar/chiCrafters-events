@@ -5,6 +5,7 @@
     @include displayFlex(space-between, center);
     @include paddingMargin($padding: 0 1em);
     width: 100%;
+    background-color: $primaryColor;
 
     ul {
         height: 100%;

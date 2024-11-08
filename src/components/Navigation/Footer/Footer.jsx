@@ -22,7 +22,7 @@ const Footer = ({ className }) => {
       <div className={styles.Footer_contact}>
         {isContactProvided && (
           <Aux>
-            <h2>Contact Vida Event</h2>
+            <h2>Contact chiCrafters Event</h2>
             <ul>
               {socials.map(({ contact, social, Icon }, idx, arr) => {
                 const href = "";
@@ -41,7 +41,8 @@ const Footer = ({ className }) => {
           </Aux>
         )}
       </div>
-      <FaRegCopyright /> {dates?.START_YEAR} Vida Events. All Rights Reserved.
+      <FaRegCopyright /> {dates?.START_YEAR} chiCrafters Events. All Rights
+      Reserved.
     </footer>
   );
 };

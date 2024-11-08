@@ -1,1 +1,1 @@
-# Vida Events
+# chiCrafters Events

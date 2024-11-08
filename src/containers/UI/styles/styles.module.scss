@@ -1,0 +1,36 @@
+@import "../../../styles/partials/colors";
+@import "../../../styles/partials/mixin";
+@import "../../../styles/partials/mediaQueries";
+
+
+.information {
+    margin-block: 1.5rem;
+    @include displayFlex();
+    flex-direction: column;
+
+    &_image {
+        @include heightWidth($height: 400px);
+
+        img {
+            @include heightWidth();
+            object-fit: cover;
+        }
+    }
+
+    &_content {
+        width: 80%;
+        margin-inline: auto;
+
+        @include responsive(desktop-screens) {
+            width: 70%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+}
