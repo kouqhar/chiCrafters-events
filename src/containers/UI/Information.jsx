@@ -3,7 +3,7 @@ import styles from "./styles/styles.module.css";
 
 const Information = ({ title, description, image }) => {
   return (
-    <div className={styles.information}>
+    <div className={[styles.information].join(" ")}>
       {image && (
         <div className={styles.information_image}>
           <img src={image} alt={title} />

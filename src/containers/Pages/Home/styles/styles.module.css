@@ -16,4 +16,27 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+}
+.container_content h2 {
+  text-align: center;
+}
+.container_content__portfolio {
+  margin-block-end: 5rem;
+}
+.container_content__portfolio a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+  justify-self: center;
+  color: #04181A;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  border: 2px solid #ffa600;
+}
+@media (min-width: 1024px) {
+  .container_content__note___information, .container_content__founder___information {
+    flex-direction: row !important;
+  }
 }/*# sourceMappingURL=styles.module.css.map */

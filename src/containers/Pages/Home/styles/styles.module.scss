@@ -18,4 +18,32 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    &_content {
+        h2 {
+            text-align: center;
+        }
+
+        &__portfolio {
+            margin-block-end: 5rem;
+
+            a {
+                @include displayFlex();
+                justify-self: center;
+                color: $primaryColor;
+                border-radius: .5rem;
+                padding: .5rem 2rem;
+                border: 2px solid $primaryOrange;
+            }
+        }
+
+        &__note,
+        &__founder {
+            &___information {
+                @include responsive(desktop-screens) {
+                    flex-direction: row !important;
+                }
+            }
+        }
+    }
 }

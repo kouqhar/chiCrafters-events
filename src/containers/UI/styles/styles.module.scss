@@ -2,6 +2,13 @@
 @import "../../../styles/partials/mixin";
 @import "../../../styles/partials/mediaQueries";
 
+$imageSize: 250px;
+
+img {
+    @include heightWidth($height: $imageSize);
+    object-fit: cover;
+}
+
 
 .information {
     margin-block: 1.5rem;
@@ -31,6 +38,86 @@
 
         p {
             text-align: justify;
+        }
+    }
+}
+
+// Carousel
+.carousel {
+    @include heightWidth($height: 50vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-inline: auto;
+    overflow: hidden;
+
+    @include responsive(desktop-screens) {
+        @include heightWidth($height: 70vh);
+    }
+
+    &_image {
+        @include heightWidth();
+        max-width: 1600px;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 5s ease-in-out;
+
+        &.activeCarousel {
+            opacity: 1;
+        }
+    }
+
+    &_button {
+        background-color: $primaryColor;
+        color: $primaryWhite;
+        border-radius: 1rem;
+        padding: .1rem 1rem;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1000;
+
+        &:first-of-type {
+            left: 10px;
+        }
+
+        &:last-of-type {
+            right: 10px;
+        }
+    }
+}
+
+// Portfolio
+.images {
+    width: 90%;
+    margin-inline: auto;
+    margin-block: 2rem;
+
+    @include responsive(desktop-screens) {
+        width: 100%;
+    }
+
+    &_content {
+        @include heightWidth();
+        @include displayGrid($gc: repeat(auto-fit, minmax($imageSize, 1fr)));
+        place-items: center;
+        padding-inline: .5rem;
+        gap: .5rem 1rem;
+
+        img {
+            cursor: pointer;
+            border-radius: .5rem;
+            transition: transform .5s ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     }
 }

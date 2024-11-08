@@ -3,12 +3,17 @@ import { useEffect, useState } from "react";
 // Components
 import Aux from "../../../Hoc/_Aux/_Aux";
 import Banner from "../Banner/Banner";
+import PortfolioComponent from "../../UI/PortfolioComponent";
+
+// DB
 import { Images } from "../../../DB/Images";
+import { PortfolioPage } from "../../../DB";
+
+// Utils
+import { capitalizeWord } from "../../../utils";
 
 // Styles
 import styles from "./styles/styles.module.css";
-import { PortfolioPage } from "../../../DB";
-import { capitalizeWord } from "../../../utils";
 
 // Banner Image
 const { concert2: banner } = Images;
@@ -58,14 +63,7 @@ const Portfolio = () => {
               ))}
           </div>
         </div>
-        <div className={styles.portfolio_container__images}>
-          <div className={styles.portfolio_container__images___content}>
-            {filteredGallery.length > 0 &&
-              filteredGallery.map(({ image, type }, idx) => (
-                <img key={`${type}-${idx}`} src={image} alt={type} />
-              ))}
-          </div>
-        </div>
+        <PortfolioComponent images={filteredGallery} />
       </div>
     </Aux>
   );
