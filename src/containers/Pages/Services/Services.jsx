@@ -4,6 +4,7 @@ import Banner from "../Banner/Banner";
 import { Images } from "../../../DB/Images";
 import { ServicesPage } from "../../../DB";
 import Information from "../../UI/Information";
+import useDocumentTitle from "../../TitleSwitcher/useDocumentTitle";
 
 // Styles
 import styles from "./styles/styles.module.css";
@@ -13,6 +14,7 @@ const { concert3: banner } = Images;
 
 const Services = () => {
   const pageTitle = "Services";
+  useDocumentTitle(pageTitle);
 
   return (
     <Aux>

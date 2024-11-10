@@ -25,12 +25,12 @@ img {
      object-fit: cover;
 }
 .information_content {
-  width: 80%;
+  width: 90%;
   margin-inline: auto;
 }
 @media (min-width: 1024px) {
   .information_content {
-    width: 70%;
+    width: 80%;
   }
 }
 .information_content h1 {
@@ -60,7 +60,7 @@ img {
   height: 100%;
   width: 100%;
   max-width: 1600px;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
   position: absolute;
   top: 0;
   left: 0;

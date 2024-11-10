@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import ImageCarousel from "../../UI/ImageCarousel";
 import PortfolioComponent from "../../UI/PortfolioComponent";
 import Information from "../../UI/Information";
+import useDocumentTitle from "../../TitleSwitcher/useDocumentTitle";
 
 // DB
 import { PortfolioPage } from "../../../DB";
@@ -32,7 +33,9 @@ const [note, founder] = [
 ];
 
 const Home = () => {
+  const pageTitle = "Home";
   const [carousel, setCarousel] = useState([]);
+  useDocumentTitle(pageTitle);
 
   useEffect(() => {
     const images = PortfolioPage.slice(0, 6).map(({ image }) => image);

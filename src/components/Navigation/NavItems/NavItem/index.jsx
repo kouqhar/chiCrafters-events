@@ -33,8 +33,12 @@ const Nav = () => {
           alt="chiCrafters Event Logo"
           style={{ height: "5vh", width: "5vh" }}
         />
-        <h1 className="hide_mobile">{ApplicationName}</h1>
-        <h1 className="show_mobile">{ApplicationName}M</h1>
+        <h1 className="hide_mobile">
+          <span className="officialName">{ApplicationName}</span>
+        </h1>
+        <h1 className="show_mobile">
+          <span className="officialName">{ApplicationName}M</span>
+        </h1>
       </div>
 
       <>

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Aux from "../../../Hoc/_Aux/_Aux";
 import Banner from "../Banner/Banner";
 import PortfolioComponent from "../../UI/PortfolioComponent";
+import useDocumentTitle from "../../TitleSwitcher/useDocumentTitle";
 
 // DB
 import { Images } from "../../../DB/Images";
@@ -20,6 +21,7 @@ const { concert2: banner } = Images;
 
 const Portfolio = () => {
   const pageTitle = "Portfolio";
+  useDocumentTitle(pageTitle);
   const [query, setQuery] = useState("all");
   const [gallery, setGallery] = useState([]);
   const [filters, setFilters] = useState(["all"]);

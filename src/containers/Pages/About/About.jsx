@@ -7,12 +7,14 @@ import { AboutPage } from "../../../DB";
 // Styles
 import styles from "./styles/styles.module.css";
 import Information from "../../UI/Information";
+import useDocumentTitle from "../../TitleSwitcher/useDocumentTitle";
 
 // Banner Image
 const { concert1: banner } = Images;
 
 const About = () => {
   const pageTitle = "About";
+  useDocumentTitle(pageTitle);
 
   return (
     <Aux>

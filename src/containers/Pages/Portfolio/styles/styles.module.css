@@ -6,15 +6,14 @@ img {
 }
 
 .portfolio_container__heading {
-  width: 80%;
+  width: 100%;
   text-align: center;
   margin-inline: auto;
   position: sticky !important;
-  top: 2vh;
+  top: 2.5vh;
 }
 @media (min-width: 1024px) {
   .portfolio_container__heading {
-    width: 70%;
     top: 0;
   }
 }
@@ -26,6 +25,13 @@ img {
   -ms-align-items: center;
   background-color: #04181A;
   border-radius: 0.5rem;
+  width: 90%;
+  margin-inline: auto;
+}
+@media (min-width: 1024px) {
+  .portfolio_container__heading___filter {
+    width: 80%;
+  }
 }
 .portfolio_container__heading___filter p {
   cursor: pointer;

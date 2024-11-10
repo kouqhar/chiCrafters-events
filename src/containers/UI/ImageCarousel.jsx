@@ -30,7 +30,7 @@ const ImageCarousel = ({ images }) => {
 
   return (
     <div
-      className={styles.carousel}
+      className={[styles.carousel, "carousel"].join(" ")}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

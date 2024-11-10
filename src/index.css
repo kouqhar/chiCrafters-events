@@ -79,21 +79,29 @@ header {
   z-index: 9999999;
 }
 
+.officialName {
+  font-family: cursive;
+  color: darkturquoise;
+}
+
 .active {
-  color: #557429 !important;
+  /* color: teal !important; */
+  filter: grayscale(1);
+  opacity: .35;
+  font-weight: bolder;
 }
 
 .loading {
   min-height: 70vh;
   height: 100%;
   width: 100%;
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: cursive;
   font-weight: bolder;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: red;
+  color: #04181A;
 }
 
 .navigation>div>svg {

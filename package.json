@@ -1,8 +1,24 @@
 {
-  "name": "vida-events",
+  "name": "chiCrafters Events",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "keywords": [
+    "event planning",
+    "event",
+    "ushering",
+    "decoration",
+    "deco",
+    "surprise",
+    "birthday",
+    "bridal",
+    "bridal shower",
+    "engagement",
+    "proposal",
+    "wedding",
+    "Nigeria",
+    "planning"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",

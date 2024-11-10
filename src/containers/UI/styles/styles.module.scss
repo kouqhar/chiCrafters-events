@@ -25,11 +25,11 @@ img {
     }
 
     &_content {
-        width: 80%;
+        width: 90%;
         margin-inline: auto;
 
         @include responsive(desktop-screens) {
-            width: 70%;
+            width: 80%;
         }
 
         h1 {
@@ -59,7 +59,7 @@ img {
     &_image {
         @include heightWidth();
         max-width: 1600px;
-        border-radius: 10px;
+        border-radius: 0 0 10px 10px;
         position: absolute;
         top: 0;
         left: 0;

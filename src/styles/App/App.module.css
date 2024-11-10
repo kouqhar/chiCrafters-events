@@ -6,4 +6,17 @@
 .Container {
   height: 100%;
   width: 100%;
+  max-width: 1700px;
+  margin-inline: auto;
+  background-color: #000000 !important;
+}
+@media (prefers-color-scheme: dark) {
+  .Container {
+    background-color: #000000 !important;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .Container {
+    background-color: #ffffff !important;
+  }
 }/*# sourceMappingURL=App.module.css.map */

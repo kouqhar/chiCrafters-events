@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Aux from "../../../Hoc/_Aux/_Aux";
 import Banner from "../Banner/Banner";
 import { Input, Button } from "../../UI";
+import useDocumentTitle from "../../TitleSwitcher/useDocumentTitle";
 
 // DB
 import { Images } from "../../../DB/Images";
@@ -19,6 +20,7 @@ const pageTitle = "Contact";
 const Contact = () => {
   const [bookingDetails, setBookingDetails] = useState({});
   const [formReset, setFormReset] = useState(0);
+  useDocumentTitle(pageTitle);
 
   useEffect(() => {
     const partialObj = {};
@@ -36,10 +38,10 @@ const Contact = () => {
   };
 
   const handleFormInput = (e) => {
-    const { id, value } = e.target;
+    const { name, value } = e.target;
     setBookingDetails((prevState) => ({
       ...prevState,
-      [id]: value,
+      [name]: value,
     }));
   };
 

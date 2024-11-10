@@ -8,7 +8,7 @@ function useDocumentTitle(title, prevailOnUnmount = false) {
   }, [prevailOnUnmount]);
 
   useEffect(() => {
-    const titlePrefix = "Global Gateway || ";
+    const titlePrefix = "chiCrafters Events || ";
     document.title = `${titlePrefix}${title.trim()}`;
   }, [title]);
 }
