@@ -5,8 +5,11 @@
       "destination": "/index.html",
       "permanent": false
     }
-  ], 
-"rewrites": [
-	{ "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
