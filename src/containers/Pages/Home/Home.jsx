@@ -29,7 +29,7 @@ const [note, founder] = [
     description: lorem,
     image: concert3,
   },
-  { title: "MEET OUT FOUNDER", description: lorem, image: concert4 },
+  { title: "MEET OUR FOUNDER", description: lorem, image: concert4 },
 ];
 
 const Home = () => {
@@ -38,7 +38,7 @@ const Home = () => {
   useDocumentTitle(pageTitle);
 
   useEffect(() => {
-    const images = PortfolioPage.slice(0, 6).map(({ image }) => image);
+    const images = PortfolioPage.slice(0, 6).map(({ image }) => image).reverse();
 
     setCarousel(images);
   }, []);
